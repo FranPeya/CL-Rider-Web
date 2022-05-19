@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="https://live.pystatic.com/webassets/favicon-8f0ea2519d2575076b739999329af939.ico">
     <title>RidersYa</title>
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link href="Font/fonts-stylesheet.css" rel="stylesheet">
-<link rel="stylesheet" href="CSS/Style.css">
-<link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="Font/fonts-stylesheet.css" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+	<link rel="stylesheet" href="CSS/Seguridad-Style.css">
+    <link rel="stylesheet" href="CSS/Applicants-style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,900&display=swap" rel="stylesheet">
 
     <style type="text/css">
@@ -28,7 +28,7 @@
         }
     </style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149354200-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -37,7 +37,6 @@
 
   gtag('config', 'UA-149354200-2');
 </script>
-
 </head>
 
 <body>
@@ -79,9 +78,11 @@
 									<li><a href="pagos.html">Mis Pagos</a></li>
 									<li><a href="ganancias.html">Mis Ganancias en la App</a></li>
 									<li><a href="convenios.html">Convenios</a></li>
+									<li><a href="multiplicadores.html">Multiplicadores</a></li>
 									</ul></li> 
 									<li class="submenu"><a href="social.html">Seguridad Social</a>  		 
-									<li><a href="https://www.repartosya.cl/" class="Registro" target="_blank">Registrate</a></li>
+									<li><a href="https://www.repartosya.cl/" class="Registro" target="_blank">Registrate</a></li>									<li><a href="ridermiperfil.html" class="Registro" target="_blank">&nbspRider #MiPerfil <i class="fa fa-user" style="font-size:25px">&nbsp</i>
+</a></li>
                                              </li>                
                                                 </ul>
                                                        </nav>
@@ -109,9 +110,9 @@
 
         <div class="Texto2">
 
-   <p>Ante cualquier consulta, no dudes en enviarnos un ticket. Debes presionar la opción "Soporte" en el menú de la app, luego en "Crea un nuevo ticket" para generar la consulta. Recuerda que debes completar los campos de Asunto, Ciudad de repartos, Motivo y Descripción. El equipo de Soporte para riders tiene hasta 24 horas para darte la primera respuesta. Luego, en caso de haber una repregunta sobre el mismo ticket, dependiendo del tipo de inconveniente, tendrá entre 48 a 96 horas para resolverlo.<br><br></div></div>
+   <p>Ante cualquier consulta, no dudes en enviarnos un ticket. Debes presionar la opción "Soporte" en el menú de la app, luego en "Crea un nuevo ticket" para generar la consulta. Recuerda que debes completar los campos de Asunto, Ciudad de repartos, Motivo y Descripción. El equipo de Soporte para Repartidores tiene hasta 24 horas para darte la primera respuesta. Luego, en caso de haber una repregunta sobre el mismo ticket, dependiendo del tipo de inconveniente, tendrá entre 48 a 96 horas para resolverlo.<br><br><br><b>Ingresa tu consulta en el siguiente Link: </b><a href="https://script.google.com/a/pedidosya.com/macros/s/AKfycbx4KmiPnRE-mAsmcGpj2ciOsG6tiBFUd_vYoRc_/exec?_ga=2.99504539.443667900.1637085123-67448413.1636386486" target="_blank">Formulario</a></div></div>
    
-   
+
 	
 	<center><img src="IMG/s1.jpeg"width="20%" height="20%">&nbsp;&nbsp;&nbsp;
 &nbsp;
@@ -177,6 +178,38 @@
 	
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
+    
+    <script>
+    // Give iframe some time to load, while re-checking
+    var retries = 5;
+    var attempts = 0;
+    var done = false;
+    function checkIfAuthed() {
+        attempts++;
+        console.log(`Checking if authed...`);
+        var iframe = document.querySelector('.appsWidget');
+        if (iframe.contentWindow.length) {
+            // User has signed in, preventing x-frame deny issue
+            // Hide auth prompt overlay
+            document.querySelector('.loggedOut').style.display = 'none';
+            done = true;
+        } else {
+            console.log(`iframe.contentWindow.length is falsy, user needs to auth`);
+        }
+
+        if (done || attempts >= retries) {
+            clearInterval(authChecker);
+        }
+    }
+    window.authChecker = setInterval(checkIfAuthed, 200);
+    document.querySelectorAll('.authButton').forEach(function(elem){
+        elem.addEventListener('click',function(evt){
+            var currentUrl = document.location.href;
+            var authPage = 'https://script.google.com/macros/s/AKfycbx4KmiPnRE-mAsmcGpj2ciOsG6tiBFUd_vYoRc_/exec?auth=true&redirect=' + encodeURIComponent(currentUrl);
+            window.open(authPage,'_blank');
+        });
+    });
+</script>
 
 </body>
 </html>

@@ -18,7 +18,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: #fff;
 }
 
 /* mouse over link */
@@ -544,7 +544,7 @@ figure{
 }
 
 
-/* Nueva Navegación */
+/* Nueva NavegaciÃ³n */
 #mainnav > ul {
 	text-align: right;
 	
@@ -1026,7 +1026,7 @@ figure{
 }
 
 .btn-submenu:before {
-   content: "⬇";
+   content: "*";
    color: #fff;
    font-family: Texta alt,'Muli',lato, sans-serif;
 }

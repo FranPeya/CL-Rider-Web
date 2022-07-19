@@ -336,6 +336,127 @@ figure{
 }
 
 
+/* Modal */
+.modal {
+  font-family: Texta alt,'Muli',lato, sans-serif;
+  color: black;
+  font-weight: 800;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido del Modal */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Animación del Modal */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #FF0050;
+  color: white;
+}
+
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #FFE438;
+  color: #000;
+}
+
+.deployform h4{
+  font-family: Texta alt,'Muli',lato, sans-serif;
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  top: 0px;
+  left: 50px;
+  padding: 10px;
+  position: absolute;
+
+}
+.deployform {
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  width: 180px;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #FFE438;
+  cursor: pointer;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  transition: all 0.35s cubic-bezier(0.91, -0.28, 0.06, 1.3), background-color 0.25s ease;
+  -webkit-box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.21);
+}
+.deployform:hover {
+  background-color: #fff;
+}
+.deployform .icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.1s ease;
+  transition-delay: 0.2s;
+  color: #FF0050;
+  font-size: 25px;
+}
+
 
 /* Revolution Slider
 -------------------------------------------------------------- */
@@ -346,6 +467,8 @@ figure{
 	overflow: show !important;
 	padding: 0;
 	background-color: #;
+	z-index: -1;
+
 }
 
 .tp-bullets.simplebullets.navbar {
@@ -1038,6 +1161,5 @@ figure{
 .btn-menu {
    display: none 
 }
-
 
 }

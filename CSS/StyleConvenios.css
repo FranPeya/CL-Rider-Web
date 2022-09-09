@@ -120,7 +120,7 @@ main .Indicadores button.activo {
     width: 50px ;
     color: #fff;
     cursor: pointer;
-    z-index: 1;
+    z-index: 500;
     transition: .2s ease all ;    
 }
 
@@ -241,7 +241,7 @@ header{
 
 .header2 {
     background-color:#333;
-    height: 40px;
+    height: 60px;
     padding: 16px 16px;
     vertical-align: center;
     position: fixed;
@@ -542,7 +542,7 @@ figure{
   font-weight: 800;
   font-size: 20px;
   text-align: right;
-  top: 0px;
+  top: -2px;
   left: 50px;
   padding: 10px;
   position: absolute;
@@ -553,7 +553,7 @@ figure{
   position: fixed;
   bottom: 30px;
   right: 0px;
-  width: 180px;
+  width: 300px;
   height: 40px;
   padding: 10px;
   border-top-left-radius: 20px;
@@ -577,7 +577,7 @@ figure{
   height: 18px;
   position: absolute;
   left: 20px;
-  top: 27px;
+  top: 18px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -818,7 +818,7 @@ figure{
 }
 
 #mainnav > ul > li > a {
-    font-size: 22px;
+    font-size: 20px;
     font-family: Texta alt,'Muli', sans-serif;
     letter-spacing: 0px;
     font-weight: 800;

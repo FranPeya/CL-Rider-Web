@@ -487,7 +487,7 @@ figure{
 /* Contenido del Modal */
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #ff0050;
   margin: auto;
   padding: 0;
   width: 80%;
@@ -531,7 +531,7 @@ figure{
 
 
 .modal-footer {
-  padding: 2px 16px;
+  padding: 6px 16px;
   background-color: #FFE438;
   color: #000;
 }

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         })
         contenidoRegistroDOM.innerHTML = listRegistro
 
-        filtrado = data.filter( p => p.categoria === "Equipamiento" )
+        filtrado = data.filter( p => p.categoria === "Material Publicitario" )
         console.log(filtrado)
         filtrado.forEach(contenido => {
             listInd += retornoCardContenido(contenido)

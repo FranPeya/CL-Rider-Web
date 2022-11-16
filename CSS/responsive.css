@@ -293,7 +293,7 @@
 
 	.header.header-style2,
 	.header.header-style3 {
-		position: relative;
+		position: fixed;
 		background: #333;
 	}
 
@@ -318,7 +318,8 @@
 	}
 
 	.header.header-style3 + #mainnav-mobi {
-		top: auto;
+		top: 130px;
+		
 	}
 
 	.flat-one-halft {

@@ -16,7 +16,9 @@ header{
     padding: 1em 1em;
     position: fixed;
     width: 100%;
+    height: 7%;
     z-index:99;
+    background-color: #FF99BE;
 
 }
 .logo-nav-registro{
@@ -32,6 +34,103 @@ header{
     margin: 0em;
     display: inline-block;
    }
+   
+   .resultBox{
+  color:#100423;
+
+}
+button.accordion-button:not(.collapsed){
+  color: #fa0050;
+  background-color: #FFE1E0;
+}
+.accordion-button:focus{
+
+  border-color: #fa0050;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    vertical-align: -0.125em;
+    border: 0.25em solid #fff;
+    border-right-color: #FF0050;
+    border-radius: 70%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .55s linear infinite spinner-border;
+}
+.card-group .card {
+  font-family: texta alt, muli, lato;
+  padding: 40px;
+  margin: 30px;
+  background-color: #fff;
+  border-color: #ff0050;
+  height: 280px;
+  overflow: hidden;
+}
+.card-title {
+  font-weight: 800;
+  letter-spacing: -0.23px;
+}
+.card-group .card:hover {
+  background-color: #00d9fc;
+  transition-duration: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all 0.5s ease;
+}
+.card-group .card a {
+  color: #100423;
+  text-decoration-line: none;
+}
+.card-group .card img {
+  width: 150px;
+}
+
+.cont-rows {
+  cursor: pointer;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border-style: solid;
+  border-color: #fa0050;
+  width: 80%;
+  background-color: #f6f8f8;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: lato, texta alt, muli, sans-serif;
+  font-size: small;
+}
+
+.cont-rows a {
+  text-decoration: none;
+  color: #100423;
+}
+
+.cont-rows:hover,
+.cont-rows a:hover {
+  background-color: #fa0050;
+  color: #f6f8f8;
+  transition-duration: 0.5s;
+}
+
+.head h1 {
+  font-family: texta alt, muli, lato, sans-serif;
+  font-weight: 800;
+  padding: 10px 5%;
+  font-size: 32px;
+  color: #fa0050;
+}
+
+.con-head h1 {
+  font-family: texta alt, muli, lato, sans-serif;
+  font-weight: 800;
+  padding: 10px 5%;
+  font-size: 32px;
+  color: #fa0050;
+}
+
 
 .Navegation ul {
     margin: 0em;
@@ -83,7 +182,7 @@ header{
 
 .header2 {
     background-color:#333;
-    height:60px;
+    height:65px;
     padding: 16px 16px;
     vertical-align: center;
     position: fixed;
@@ -356,7 +455,7 @@ figure{
    list-style: none;
    margin: -50px;
    margin-right: -280px;
-   padding: 20px;
+   padding: 18px;
 }
 
 #mainnav ul li {
@@ -529,7 +628,7 @@ figure{
       }
         
      .Logo img {
-      width: 70px;
+     width: 70px;
      padding: left 0;
      margin: 0em;
      display: inline-block;
@@ -1285,6 +1384,20 @@ main .Indicadores2 button.activo {
 
 .close:hover,
 .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

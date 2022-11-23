@@ -173,8 +173,10 @@ main .Indicadores button.activo {
 header{
     padding: 1em 1em;
     position: fixed;
+    height: 3.5%;
     width: 100%;
     z-index:99;
+    background-color: #FF99BE;
 
 }
 .logo-nav-registro{
@@ -241,7 +243,7 @@ header{
 
 .header2 {
     background-color:#333;
-    height: 40px;
+    height: 3.5%;
     padding: 16px 16px;
     vertical-align: center;
     position: fixed;
@@ -809,7 +811,7 @@ figure{
 
 #mainnav ul {
    list-style: none;
-   margin: -50px;
+   margin: -55px;
    padding: 20px;
 }
 
@@ -851,7 +853,7 @@ figure{
 	text-align: center;
    	position: absolute;
    	left: 0;
-   	top: 60px;
+   	top: 80px;
    	width: 200px;   
     background: transparent;
     font-weight: 800;

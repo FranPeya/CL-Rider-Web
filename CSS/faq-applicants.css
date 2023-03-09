@@ -535,7 +535,6 @@ figure{
    	position: absolute;
    	left: 0;
    	top: 60px;
-   	width: 200px;   
     background: transparent;
     font-weight: 800;
    	z-index: 9999;
@@ -564,7 +563,7 @@ figure{
 }
 
 #mainnav ul li ul li {
-   margin-left: 40px;
+   margin-left: 0px;
 }
 
 #mainnav ul.submenu li ul {
@@ -905,11 +904,11 @@ main .contenedor-principal{
 	position: relative;
 	background: transparent;
 	cursor: pointer;
-	margin: 10px 0;
+	margin: 35px 0;
 	width: 26px;
 	height: 12px;
 	float: left;
-    margin-left: 15px;
+    margin-left: -10px;
     -webkit-transition: all ease .238s;
        -moz-transition: all ease .238s;
             transition: all ease .238s;

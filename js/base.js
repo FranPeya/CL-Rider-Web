@@ -1,8 +1,17 @@
+export const catAutogestion = 'https://script.google.com/macros/s/AKfycbx6ZI4XiYAzz8pccYtKw4jnqMqqBD1rcvPSPFV-rDisD3Eb7-1AU2XJHtgvV6zvKLkw/exec';
+export const resAutogestion = 'https://script.google.com/macros/s/AKfycbxtmFdUCeomzYPU5w9wmtKbaX155iBttGHZhaIfYgGzkWSTUsAQHL4wpMTT1E5obrhy/exec';
+export const contDescuentos = 'https://script.google.com/macros/s/AKfycbzZPcD-4tlsPaaSMq4Pi_3p2_OlQuWCdFNR2RFjkBnTI3uYovzkf_TZo3YNg-l19azdPQ/exec';
+export const catDescuentos = 'https://script.google.com/macros/s/AKfycbz1HMfsL-SRlmNGeAOks6SBNmJ_wlsiOaXK4PpDxoGlzf10N6b-bmFTt9vIv-pRfU63Aw/exec';
+export const faqAplicantes = 'https://script.google.com/macros/s/AKfycbz8WloK3snvapDeJyc55n4fHiTKgN55gFc52G9Y0GAPn5BNmqmZwF-NM_8TmaAqLfUU/exec';
+
+
 const navbar = document.getElementById('navbar');
 const footer = document.getElementById('footer');
 
+
 let prevScrollPos = window.pageYOffset;
 let isScrollingUp = false;
+
 
 // Crea el script para gtag.js
 var script1 = document.createElement('script');
@@ -45,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h5 class="offcanvas-title text-white">Menu</h5>
       <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
     </div>
-    <div class="offcanvas-body justify-content-end ps-5">
+    <div class="offcanvas-body justify-content-end ps-4">
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item py-2">
         
@@ -62,25 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="/img/Discount.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         Descuentos</a>
       </li>
+        <li class="nav-item py-2">
+        <a class="nav-link text-white nav-cat" href="https://ridershop-cr.myshopify.com/account/login?checkout_url=/">
+        <img src="/img/Shop.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
+        Shop</a>
+      </li>
       <li class="nav-item py-2">
         <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/aplicantes.html">
         <img src="/img/Information.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         ¿Qué necesito para aplicar?</a>
       </li>
       <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="https://ridershop-cr.myshopify.com/collections/equipamiento">
-        <img src="/img/Shop.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
-        Shop</a>
+        <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/ridermiperfil.html">
+        <img src="/img/BrandPeyaPlus.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
+       MiPerfil</a>
       </li>
-   
-
-
-      
-
-
-
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="https://www.repartosya.cl/?utm_source=riderhub&utm_medium=own&utm_campaign=navbar">
+          <a class="nav-link text-white nav-cat" href="https://www.repartosya.com.pe/?utm_source=riderhub&utm_medium=own&utm_campaign=navbar">
           <img src="../img/Moto.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
           Regístrate aquí</a>
         </li>

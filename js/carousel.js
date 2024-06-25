@@ -1,25 +1,25 @@
+import { contDescuentos } from './base.js';
+
 let carouselAmostrar = "";
 let carouselJSON = [];
 let carFiltrada = "";
 
 const carouselDOM = document.querySelector("#carousel");
 
-const dataCar = `https://script.google.com/macros/s/AKfycbzZPcD-4tlsPaaSMq4Pi_3p2_OlQuWCdFNR2RFjkBnTI3uYovzkf_TZo3YNg-l19azdPQ/exec`;
-
 document.addEventListener("DOMContentLoaded", () => {
     
-  const obtengoCarousel = (dataCar) => {
-    fetch(dataCar)
+  const obtengoCarousel = (contDescuentos) => {
+    fetch(contDescuentos)
       .then((response) => response.json())
       .then((data) => {
-        carFiltrado = data.filter(p => p.banner === true && p.publicar === true);
-        carFiltrado.forEach((cont, index) => {
+        carFiltrada = data.filter(p => p.banner === true && p.publicar === true);
+        carFiltrada.forEach((cont, index) => {
           carouselAmostrar += retornoCarouselContenido(cont, index);
         });
         carouselDOM.innerHTML = carouselAmostrar;
       });
   };
-  obtengoCarousel(dataCar);
+  obtengoCarousel(contDescuentos);
 });
 
 const retornoCarouselContenido = (cont, index) => {
@@ -51,7 +51,7 @@ const retornoCarouselContenido = (cont, index) => {
         <tr style="text-align: center; height: 10%;" bgcolor="#fa0050">
           <td>
             <div>
-              <a class="btn banner-boton border border-0 rounded-pill mb-2" href="#" data-bs-toggle="modal" role="button" id="${track_id}" data-bs-target="#${track_id}Modal">Conoce más</a>
+              <a class="btn banner-boton border border-0 rounded-pill mb-2"  data-bs-toggle="modal" role="button" data-bs-target="#${track_id}Modal">Conoce más</a>
             </div>
           </td>
         </tr>

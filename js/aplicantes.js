@@ -1,3 +1,5 @@
+import { faqAplicantes } from './base.js';
+
 let listRegistro = ""
 let listInd = ""
 
@@ -5,23 +7,17 @@ let listCuenta = ""
 let contenidoJSON = []
 let verMas = ""
 let detalleJSON = []
-
-
-
+let filtrado = ""
 
 const contenidoRegistroDOM = document.querySelector("#registro")
 const contenidoIndDOM = document.querySelector("#indumentaria")
 const contenidoCuentaDOM = document.querySelector("#cuenta")
 
-const URL=`https://script.google.com/macros/s/AKfycbz8WloK3snvapDeJyc55n4fHiTKgN55gFc52G9Y0GAPn5BNmqmZwF-NM_8TmaAqLfUU/exec`
-
-
-
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
- const obtengoContenido = (URL)=> {
-  fetch(URL)
+ const obtengoContenido = (faqAplicantes)=> {
+  fetch(faqAplicantes)
   .then(response => response.json() )
   .then(data=> { 
      
@@ -32,7 +28,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         })
         contenidoRegistroDOM.innerHTML = listRegistro
 
-        filtrado = data.filter( p => p.categoria === "Material Publicitario" )
+        filtrado = data.filter( p => p.categoria === "Equipamiento" )
         console.log(filtrado)
         filtrado.forEach(contenido => {
             listInd += retornoCardContenido(contenido)
@@ -51,7 +47,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
       
 
      })}
-     obtengoContenido(URL)
+     obtengoContenido(faqAplicantes)
 
 
  

@@ -1,7 +1,10 @@
+import { resAutogestion } from './base.js';
+
 let cardsAmostrar = "";
 let contenidoJSON = [];
 let verMas = "";
 let detalleJSON = [];
+let filtrado=""
 
 
 const contenidoDOM = document.querySelector(".contenido");
@@ -9,12 +12,9 @@ const cargandoDOM = document.querySelector("#cargando");
 const detalleDOM = document.querySelector("#exampleModal");
 const pageName = document.querySelector("#nombrePagina");
 
-
-const URL = `https://script.google.com/macros/s/AKfycbxtmFdUCeomzYPU5w9wmtKbaX155iBttGHZhaIfYgGzkWSTUsAQHL4wpMTT1E5obrhy/exec`;
-
 document.addEventListener("DOMContentLoaded", () => {
-  const obtengoContenido = (URL) => {
-    fetch(URL)
+  const obtengoContenido = (resAutogestion) => {
+    fetch(resAutogestion)
       .then((response) => response.json())
       .then((data) => {
         if (true) {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
       });
   };
-  obtengoContenido(URL);
+  obtengoContenido(resAutogestion);
 });
 
 const retornoCardContenido = (contenido) => {

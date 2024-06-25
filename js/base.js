@@ -58,31 +58,31 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item py-2">
         
-        <a class="nav-link text-white nav-cat" href="..CL-Rider-Web/centro.html">
+        <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/centro.html">
         <img src="/img/Help.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px">  Centro de autogestión</a>
         </li>
         <li class="nav-item py-2">
-          <a class="nav-link text-white nav-cat" href="..CL-Rider-Web/seguridad.html">
+          <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/seguridad.html">
           <img src="/img/Security.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
           Seguridad</a>
         </li>
         <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="..CL-Rider-Web/descuentos.html">
+        <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/descuentos.html">
         <img src="/img/Discount.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         Descuentos</a>
       </li>
         <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="https://ridershop-cr.myshopify.com/account/login?checkout_url=/">
+        <a class="nav-link text-white nav-cat" href="https://rider-shop-py-cl.myshopify.com/">
         <img src="/img/Shop.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         Shop</a>
       </li>
       <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="..CL-Rider-Web/aplicantes.html">
+        <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/aplicantes.html">
         <img src="/img/Information.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
         ¿Qué necesito para aplicar?</a>
       </li>
       <li class="nav-item py-2">
-        <a class="nav-link text-white nav-cat" href="..CL-Rider-Web/ridermiperfil.html">
+        <a class="nav-link text-white nav-cat" href="../CL-Rider-Web/ridermiperfil.html">
         <img src="/img/BrandPeyaPlus.svg" alt="Logo Mobile" class="d-lg-none logo-mobile img-fluid" style="width: 30px;padding-right:5px"> 
        MiPerfil</a>
       </li>

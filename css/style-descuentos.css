@@ -55,6 +55,9 @@ header{
       --bs-btn-hover-bg:#fa0050;
       --bs-btn-active-bg:#46E8E8;
   }
+  .btn{
+    --bs-btn-font-weight: 800 !important;
+  }
  
  
  
@@ -114,7 +117,7 @@ body{
     text-align: center;
 }
 .banner{
-    height:400px;
+    height:300px;
     border-collapse:collapse;
     color:#fff;
     width:100%;
@@ -151,20 +154,24 @@ body{
     color:#100423;
     font-weight: 800;
     padding:10px 0px;
-    width: 70%;
+    width: 100%;
     border-radius: 0px 0px 20px 20px;
     margin-left:auto;
     margin-right: auto;
+    word-wrap: normal;
 }
 .card-body{
     padding:0px 20px 20px 20px;
+}
+.card-text{
+    font-size: 14px;
 }
 .descuento{
     font-size: 45px;
     font-weight: 800;
 }
 main{
-    width: 70%;
+    width: 75%;
     margin: auto;
 
 }
@@ -323,3 +330,15 @@ main{
     
     }
 }
+
+@media (max-width: 800px) {
+    .featurette {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .featurette .col-lg-4, .featurette .col-lg-5 {
+      width: 100%; /* Ocupar todo el ancho disponible */
+    }
+  }
+  
